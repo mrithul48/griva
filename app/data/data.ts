@@ -495,8 +495,8 @@ const slides: SlideItem[] = [
     description:
       "Package includes Xbox Series S 1TB console, 1 Xbox Wireless Controller, High Speed HDMI cable.",
     rating: 5,
-    mainImage: joystic,
-    thumbs: [joystic, joystic, joystic, joystic],
+    mainImage: gamejoysticnew,
+    thumbs: [gamejoysticnew, gamejoysticnew, gamejoysticnew, gamejoysticnew],
   },
   {
     id: 2,
