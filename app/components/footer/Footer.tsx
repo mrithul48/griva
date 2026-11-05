@@ -99,14 +99,14 @@ export default function Footer() {
           <div className="lg:col-span-4 space-y-4">
             <Link href="/" className="flex items-center gap-1">
               <h2 className="text-xl font-bold tracking-tight text-black">
-                GR<span className="text-orange-500 font-extrabold">i</span>VA
+                E-<span className="text-[#2563EB] font-extrabold">Commerce</span>
               </h2>
             </Link>
             <p className="max-w-[280px] text-xs leading-relaxed text-gray-500">
               Your go-to store for authenticated, high-quality flagship electronics, audio gear, and gadgets.
             </p>
             <div className="space-y-1.5 text-xs text-gray-600 font-semibold">
-              <p>Email: support@griva.com</p>
+              <p>Email: support@e-commerce.com</p>
               <p>Support: +08 9229 8228</p>
             </div>
             {/* Social handles */}
@@ -120,7 +120,7 @@ export default function Footer() {
                 <a
                   key={idx}
                   href={item.href}
-                  className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-55 border border-gray-100 text-gray-600 hover:bg-orange-500 hover:text-white transition-all duration-200"
+                  className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-55 border border-gray-100 text-gray-600 hover:bg-[#0F2E5C] hover:text-white transition-all duration-200"
                 >
                   {item.icon}
                 </a>
@@ -154,7 +154,7 @@ export default function Footer() {
                       <Link
                         key={link.label}
                         href={link.href}
-                        className="text-xs text-gray-500 hover:text-orange-500 transition-colors font-medium"
+                        className="text-xs text-gray-500 hover:text-[#0F2E5C] transition-colors font-medium"
                       >
                         {link.label}
                       </Link>
@@ -175,7 +175,7 @@ export default function Footer() {
                             <Link
                               key={link.label}
                               href={link.href}
-                              className="text-xs text-gray-500 hover:text-orange-500 transition-colors py-1 block"
+                              className="text-xs text-gray-500 hover:text-[#0F2E5C] transition-colors py-1 block"
                             >
                               {link.label}
                             </Link>
@@ -204,12 +204,12 @@ export default function Footer() {
                 placeholder="Enter email..."
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 rounded-lg border border-gray-200 px-3 py-2 text-xs outline-none focus:border-orange-500 bg-white text-black"
+                className="flex-1 rounded-lg border border-gray-200 px-3 py-2 text-xs outline-none focus:border-[#0F2E5C] bg-white text-black"
                 required
               />
               <button
                 type="submit"
-                className="flex h-9 w-9 items-center justify-center rounded-lg bg-orange-500 text-white hover:bg-orange-600 transition-colors cursor-pointer"
+                className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#0F2E5C] text-white hover:bg-[#0A2142] transition-colors cursor-pointer"
               >
                 <Send size={14} />
               </button>
@@ -223,7 +223,7 @@ export default function Footer() {
                   exit={{ opacity: 0 }}
                   className="text-[10px] font-semibold text-green-600"
                 >
-                  Thanks for subscribing to GriVA!
+                  Thanks for subscribing to E-Commerce!
                 </motion.p>
               )}
             </AnimatePresence>
@@ -233,7 +233,7 @@ export default function Footer() {
         {/* Bottom copyright section */}
         <div className="border-t border-gray-100 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[11px] text-gray-400 font-medium">
-            © {new Date().getFullYear()} GriVA Store. All Rights Reserved.
+            © {new Date().getFullYear()} E-Commerce Store. All Rights Reserved.
           </p>
 
           <div className="flex flex-wrap items-center gap-2">

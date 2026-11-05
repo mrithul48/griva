@@ -13,11 +13,11 @@ const ProductPromoBanner = () => {
           
 
 
-          <div className="relative grid min-h-[210px] bg-[#f0e5bc] items-center gap-6 px-5 py-6 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:px-12 lg:py-8">
+          <div className="relative grid min-h-[210px] bg-[#EFF5FC] items-center gap-6 px-5 py-6 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:px-12 lg:py-8">
             
             {/* Left Content */}
             <div className="max-w-lg">
-              <span className="inline-block text-[10px] font-bold uppercase tracking-[3px] text-orange-500">
+              <span className="inline-block text-[10px] font-bold uppercase tracking-[3px] text-[#0F2E5C]">
                 Exclusive Headphone
               </span>
 
@@ -37,7 +37,7 @@ const ProductPromoBanner = () => {
               <div className="mt-5">
                 <Link
                   href="/shop"
-                  className="inline-flex h-10 items-center justify-center rounded-xl bg-orange-500 px-6 text-[11px] font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-orange-600 hover:shadow-lg hover:shadow-orange-500/20"
+                  className="inline-flex h-10 items-center justify-center rounded-xl bg-[#0F2E5C] px-6 text-[11px] font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-[#0A2142] hover:shadow-lg hover:shadow-[#0F2E5C]/20"
                 >
                   Shop Now
                 </Link>

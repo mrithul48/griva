@@ -56,7 +56,7 @@ export default function ShippingPage() {
             <section className="space-y-3">
               <h3 className="font-bold text-gray-900 text-base">Customs, Duties &amp; Taxes</h3>
               <p>
-                GriVA is not responsible for any customs and taxes applied to your order. All fees imposed during or after shipping are the responsibility of the customer (tariffs, taxes, duties, etc.).
+                E-Commerce is not responsible for any customs and taxes applied to your order. All fees imposed during or after shipping are the responsibility of the customer (tariffs, taxes, duties, etc.).
               </p>
             </section>
           </div>

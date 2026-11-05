@@ -96,9 +96,9 @@ export default function ProductPage({ params }: ProductPageProps) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Breadcrumbs */}
         <div className="text-xs text-gray-500 mb-6 flex items-center gap-1.5">
-          <Link href="/" className="hover:text-orange-500 transition-colors">Home</Link>
+          <Link href="/" className="hover:text-[#0F2E5C] transition-colors">Home</Link>
           <span>/</span>
-          <Link href="/shop" className="hover:text-orange-500 transition-colors">Shop</Link>
+          <Link href="/shop" className="hover:text-[#0F2E5C] transition-colors">Shop</Link>
           <span>/</span>
           <span className="text-gray-900 truncate max-w-[200px]">{product.title}</span>
         </div>
@@ -114,7 +114,7 @@ export default function ProductPage({ params }: ProductPageProps) {
           <div className="lg:col-span-6 flex flex-col justify-between bg-white rounded-2xl p-6 md:p-8 border border-gray-100 shadow-sm">
             <div>
               {/* Category */}
-              <span className="text-xs font-bold text-orange-500 uppercase tracking-widest bg-orange-50 px-2.5 py-1 rounded-full">
+              <span className="text-xs font-bold text-[#0F2E5C] uppercase tracking-widest bg-[#EFF5FC] px-2.5 py-1 rounded-full">
                 {product.category}
               </span>
 
@@ -131,7 +131,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                       key={i}
                       className={`h-4 w-4 ${
                         i < product.rating
-                          ? "fill-orange-400 text-orange-400"
+                          ? "fill-[#2563EB] text-[#2563EB]"
                           : "text-gray-200"
                       }`}
                     />
@@ -148,7 +148,7 @@ export default function ProductPage({ params }: ProductPageProps) {
 
               {/* Price Panel */}
               <div className="mt-6 flex items-baseline gap-3 border-b pb-6">
-                <span className="text-3xl font-extrabold text-orange-500">
+                <span className="text-3xl font-extrabold text-[#0F2E5C]">
                   {product.price}
                 </span>
                 {product.oldPrice && (
@@ -171,7 +171,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                         onClick={() => setSelectedColor(color.name)}
                         className={`h-8 w-8 rounded-full border-2 transition-all cursor-pointer ${
                           selectedColor === color.name
-                            ? "border-orange-500 scale-110 ring-4 ring-orange-100"
+                            ? "border-[#0F2E5C] scale-110 ring-4 ring-[#EFF5FC]"
                             : "border-gray-200 hover:scale-105"
                         }`}
                         style={{ backgroundColor: color.hex }}
@@ -195,7 +195,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                         onClick={() => setSelectedStorage(opt.label)}
                         className={`px-4 py-2 text-xs font-semibold rounded-lg border transition-all cursor-pointer ${
                           selectedStorage === opt.label
-                            ? "border-orange-500 bg-orange-50 text-orange-500 font-bold"
+                            ? "border-[#0F2E5C] bg-[#EFF5FC] text-[#0F2E5C] font-bold"
                             : "border-gray-200 text-gray-700 bg-white hover:bg-gray-50"
                         }`}
                       >
@@ -214,7 +214,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                 <div className="flex items-center rounded-xl border border-gray-200 w-fit bg-white">
                   <button
                     onClick={handleQuantityDecrement}
-                    className="flex h-10 w-10 items-center justify-center text-gray-500 hover:bg-orange-50 hover:text-orange-500 transition rounded-l-xl cursor-pointer"
+                    className="flex h-10 w-10 items-center justify-center text-gray-500 hover:bg-[#EFF5FC] hover:text-[#0F2E5C] transition rounded-l-xl cursor-pointer"
                   >
                     <Minus className="h-4 w-4" />
                   </button>
@@ -223,7 +223,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                   </span>
                   <button
                     onClick={handleQuantityIncrement}
-                    className="flex h-10 w-10 items-center justify-center text-gray-500 hover:bg-orange-50 hover:text-orange-500 transition rounded-r-xl cursor-pointer"
+                    className="flex h-10 w-10 items-center justify-center text-gray-500 hover:bg-[#EFF5FC] hover:text-[#0F2E5C] transition rounded-r-xl cursor-pointer"
                   >
                     <Plus className="h-4 w-4" />
                   </button>
@@ -236,7 +236,7 @@ export default function ProductPage({ params }: ProductPageProps) {
               <div className="flex gap-4">
                 <button
                   onClick={handleAddToCart}
-                  className="flex-1 flex items-center justify-center gap-2 rounded-xl bg-orange-500 py-3.5 text-sm font-semibold text-white hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/10 cursor-pointer"
+                  className="flex-1 flex items-center justify-center gap-2 rounded-xl bg-[#0F2E5C] py-3.5 text-sm font-semibold text-white hover:bg-[#0A2142] transition-colors shadow-lg shadow-[#0F2E5C]/10 cursor-pointer"
                 >
                   <ShoppingCart className="h-4 w-4" />
                   Add to Cart
@@ -256,17 +256,17 @@ export default function ProductPage({ params }: ProductPageProps) {
               {/* Protection / Returns badges */}
               <div className="grid grid-cols-3 gap-2.5 pt-4 text-[10px] text-gray-500">
                 <div className="flex flex-col items-center text-center p-2 rounded-lg bg-gray-50/50">
-                  <Truck className="h-4 w-4 text-orange-500 mb-1" />
+                  <Truck className="h-4 w-4 text-[#0F2E5C] mb-1" />
                   <span className="font-semibold text-gray-700">Free Shipping</span>
                   <span>Orders over $50</span>
                 </div>
                 <div className="flex flex-col items-center text-center p-2 rounded-lg bg-gray-50/50">
-                  <RotateCcw className="h-4 w-4 text-orange-500 mb-1" />
+                  <RotateCcw className="h-4 w-4 text-[#0F2E5C] mb-1" />
                   <span className="font-semibold text-gray-700">30-Day Returns</span>
                   <span>100% money back</span>
                 </div>
                 <div className="flex flex-col items-center text-center p-2 rounded-lg bg-gray-50/50">
-                  <ShieldCheck className="h-4 w-4 text-orange-500 mb-1" />
+                  <ShieldCheck className="h-4 w-4 text-[#0F2E5C] mb-1" />
                   <span className="font-semibold text-gray-700">Full Warranty</span>
                   <span>Guaranteed quality</span>
                 </div>
@@ -283,7 +283,7 @@ export default function ProductPage({ params }: ProductPageProps) {
               onClick={() => setActiveTab("desc")}
               className={`pb-4 text-sm font-bold border-b-2 transition-all cursor-pointer ${
                 activeTab === "desc"
-                  ? "border-orange-500 text-orange-500 font-extrabold"
+                  ? "border-[#0F2E5C] text-[#0F2E5C] font-extrabold"
                   : "border-transparent text-gray-500 hover:text-gray-800"
               }`}
             >
@@ -293,7 +293,7 @@ export default function ProductPage({ params }: ProductPageProps) {
               onClick={() => setActiveTab("specs")}
               className={`pb-4 text-sm font-bold border-b-2 transition-all cursor-pointer ${
                 activeTab === "specs"
-                  ? "border-orange-500 text-orange-500 font-extrabold"
+                  ? "border-[#0F2E5C] text-[#0F2E5C] font-extrabold"
                   : "border-transparent text-gray-500 hover:text-gray-800"
               }`}
             >
@@ -303,7 +303,7 @@ export default function ProductPage({ params }: ProductPageProps) {
               onClick={() => setActiveTab("reviews")}
               className={`pb-4 text-sm font-bold border-b-2 transition-all cursor-pointer ${
                 activeTab === "reviews"
-                  ? "border-orange-500 text-orange-500 font-extrabold"
+                  ? "border-[#0F2E5C] text-[#0F2E5C] font-extrabold"
                   : "border-transparent text-gray-500 hover:text-gray-800"
               }`}
             >

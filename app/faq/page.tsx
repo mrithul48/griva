@@ -30,15 +30,15 @@ export default function FAQPage() {
                 >
                   <button
                     onClick={() => toggleFAQ(idx)}
-                    className="w-full flex items-center justify-between p-5 text-left transition hover:bg-orange-50/30 cursor-pointer"
+                    className="w-full flex items-center justify-between p-5 text-left transition hover:bg-[#EFF5FC]/50 cursor-pointer"
                   >
                     <div className="flex gap-3 items-center">
-                      <HelpCircle className={`h-4. w-4. shrink-0 ${isOpen ? "text-orange-500" : "text-gray-400"}`} />
+                      <HelpCircle className={`h-4. w-4. shrink-0 ${isOpen ? "text-[#0F2E5C]" : "text-gray-400"}`} />
                       <span className="text-sm font-bold text-gray-900">{faq.question}</span>
                     </div>
                     <ChevronDown
                       className={`h-4. w-4. text-gray-400 shrink-0 transition-transform duration-200 ${
-                        isOpen ? "rotate-180 text-orange-500" : ""
+                        isOpen ? "rotate-180 text-[#0F2E5C]" : ""
                       }`}
                     />
                   </button>

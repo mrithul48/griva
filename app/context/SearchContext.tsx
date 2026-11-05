@@ -46,7 +46,7 @@ export function SearchProvider({ children }: { children: ReactNode }) {
   // Load recent searches from localStorage
   useEffect(() => {
     try {
-      const stored = localStorage.getItem("griva-recent-searches");
+      const stored = localStorage.getItem("ecommerce-recent-searches");
       if (stored) {
         setRecentSearches(JSON.parse(stored));
       }
@@ -59,7 +59,7 @@ export function SearchProvider({ children }: { children: ReactNode }) {
   // Save recent searches to localStorage
   useEffect(() => {
     if (!hydrated) return;
-    localStorage.setItem("griva-recent-searches", JSON.stringify(recentSearches));
+    localStorage.setItem("ecommerce-recent-searches", JSON.stringify(recentSearches));
   }, [recentSearches, hydrated]);
 
   const addRecentSearch = (query: string) => {

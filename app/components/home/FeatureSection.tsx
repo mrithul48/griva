@@ -47,7 +47,7 @@ export default function FeatureSection() {
               className="flex items-center gap-3"
             >
               {/* Icon */}
-              <div className="text-orange-500">
+              <div className="text-[#0F2E5C]">
                 {feature.icon}
               </div>
 

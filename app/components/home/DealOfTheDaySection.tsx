@@ -62,7 +62,7 @@ export default function DealOfTheDaySection() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-4 sm:px-6 lg:grid-cols-[280px_1fr] lg:px-8">
         
         {/* Left Timer Card */}
-        <div className="flex flex-col items-center justify-center rounded-2xl border border-orange-100 bg-white px-6 py-8 text-center shadow-sm">
+        <div className="flex flex-col items-center justify-center rounded-2xl border border-[#E2E8F0] bg-white px-6 py-8 text-center shadow-sm">
           <span className="text-[10px] font-bold uppercase tracking-[3px] text-red-500">
             Only For Today
           </span>
@@ -83,7 +83,7 @@ export default function DealOfTheDaySection() {
               { value: secs, label: "Secs" },
             ].map(({ value, label }) => (
               <div key={label} className="flex flex-col items-center">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500 shadow-md shadow-orange-500/10">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#0F2E5C] shadow-md shadow-[#0F2E5C]/10">
                   <span className="text-lg font-bold text-white">
                     {String(value).padStart(2, "0")}
                   </span>
@@ -146,7 +146,7 @@ export default function DealOfTheDaySection() {
                 <div>
                   {/* Badges */}
                   <div className="flex items-center gap-2">
-                    <span className="rounded bg-orange-500 px-2 py-0.5 text-[9px] font-extrabold uppercase text-white">
+                    <span className="rounded bg-[#0F2E5C] px-2 py-0.5 text-[9px] font-extrabold uppercase text-white">
                       {slide.badge}
                     </span>
 
@@ -163,7 +163,7 @@ export default function DealOfTheDaySection() {
                   </p>
 
                   {/* Title */}
-                  <h3 className="mt-1 break-words text-base font-semibold leading-6 text-gray-900 transition-colors hover:text-orange-500">
+                  <h3 className="mt-1 break-words text-base font-semibold leading-6 text-gray-900 transition-colors hover:text-[#0F2E5C]">
                     <Link href={`/product/${slide.id}`}>
                       {slide.title}
                     </Link>
@@ -176,7 +176,7 @@ export default function DealOfTheDaySection() {
 
                   {/* Price */}
                   <div className="mt-3 flex items-center gap-2">
-                    <span className="text-2xl font-bold text-orange-500">
+                    <span className="text-2xl font-bold text-[#0F2E5C]">
                       {slide.price}
                     </span>
 
@@ -194,7 +194,7 @@ export default function DealOfTheDaySection() {
                 {/* Button */}
                 <button
                   onClick={handleAddToCart}
-                  className="mt-6 flex h-10 w-44 cursor-pointer items-center justify-center gap-2 rounded-xl bg-orange-500 text-xs font-bold uppercase text-white shadow-md shadow-orange-500/10 transition hover:bg-orange-600"
+                  className="mt-6 flex h-10 w-44 cursor-pointer items-center justify-center gap-2 rounded-xl bg-[#0F2E5C] text-xs font-bold uppercase text-white shadow-md shadow-[#0F2E5C]/10 transition hover:bg-[#0A2142]"
                 >
                   <ShoppingCart size={14} />
                   Add To Cart
@@ -207,14 +207,14 @@ export default function DealOfTheDaySection() {
           <div className="absolute bottom-6 right-6 flex items-center gap-2">
             <button
               onClick={prev}
-              className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border border-gray-200 bg-white transition hover:border-orange-500 hover:text-orange-500"
+              className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border border-gray-200 bg-white transition hover:border-[#0F2E5C] hover:text-[#0F2E5C]"
             >
               <ChevronLeft size={16} />
             </button>
 
             <button
               onClick={next}
-              className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border border-gray-200 bg-white transition hover:border-orange-500 hover:text-orange-500"
+              className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border border-gray-200 bg-white transition hover:border-[#0F2E5C] hover:text-[#0F2E5C]"
             >
               <ChevronRight size={16} />
             </button>
@@ -230,7 +230,7 @@ export default function DealOfTheDaySection() {
             onClick={() => setCurrent(i)}
             className={`cursor-pointer rounded-full transition-all ${
               i === current
-                ? "h-2.5 w-8 bg-orange-500"
+                ? "h-2.5 w-8 bg-[#0F2E5C]"
                 : "h-2.5 w-2.5 bg-gray-200"
             }`}
           />

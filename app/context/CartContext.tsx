@@ -105,7 +105,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   // Load from localStorage after hydration
   useEffect(() => {
     try {
-      const stored = localStorage.getItem("griva-cart");
+      const stored = localStorage.getItem("ecommerce-cart");
       if (stored) {
         const items: CartItem[] = JSON.parse(stored);
         items.forEach((item) => dispatch({ type: "ADD", payload: item }));
@@ -119,7 +119,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
   // Persist to localStorage
   useEffect(() => {
     if (!hydrated) return;
-    localStorage.setItem("griva-cart", JSON.stringify(state.items));
+    localStorage.setItem("ecommerce-cart", JSON.stringify(state.items));
   }, [state.items, hydrated]);
 
   const openDrawer = () => setIsDrawerOpen(true);

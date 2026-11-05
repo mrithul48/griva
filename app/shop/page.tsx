@@ -110,7 +110,7 @@ export default function ShopPage({ searchParams }: ShopPageProps) {
                 </h3>
                 <button
                   onClick={handleResetFilters}
-                  className="text-xs font-semibold text-orange-500 hover:text-orange-600 transition flex items-center gap-1 cursor-pointer"
+                  className="text-xs font-semibold text-[#0F2E5C] hover:text-[#2563EB] transition flex items-center gap-1 cursor-pointer"
                 >
                   <RotateCcw className="h-3 w-3" /> Reset
                 </button>
@@ -126,7 +126,7 @@ export default function ShopPage({ searchParams }: ShopPageProps) {
                     onClick={() => setSelectedCategory("")}
                     className={`block w-full text-left text-xs py-1 px-2 rounded-md transition-colors cursor-pointer ${
                       selectedCategory === ""
-                        ? "bg-orange-500 text-white font-semibold"
+                        ? "bg-[#0F2E5C] text-white font-semibold"
                         : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
                     }`}
                   >
@@ -138,7 +138,7 @@ export default function ShopPage({ searchParams }: ShopPageProps) {
                       onClick={() => setSelectedCategory(cat.toLowerCase())}
                       className={`block w-full text-left text-xs py-1 px-2 rounded-md transition-colors cursor-pointer ${
                         selectedCategory === cat.toLowerCase()
-                          ? "bg-orange-500 text-white font-semibold"
+                          ? "bg-[#0F2E5C] text-white font-semibold"
                           : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
                       }`}
                     >
@@ -154,7 +154,7 @@ export default function ShopPage({ searchParams }: ShopPageProps) {
                   <h4 className="text-xs font-bold text-gray-900 uppercase tracking-wider">
                     Max Price
                   </h4>
-                  <span className="text-xs font-bold text-orange-500">${maxPrice}</span>
+                  <span className="text-xs font-bold text-[#0F2E5C]">${maxPrice}</span>
                 </div>
                 <input
                   type="range"
@@ -163,7 +163,7 @@ export default function ShopPage({ searchParams }: ShopPageProps) {
                   step="50"
                   value={maxPrice}
                   onChange={(e) => setMaxPrice(Number(e.target.value))}
-                  className="w-full h-1.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-orange-500"
+                  className="w-full h-1.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#0F2E5C]"
                 />
                 <div className="flex justify-between text-[10px] text-gray-400 mt-1 font-semibold">
                   <span>$0</span>
@@ -183,7 +183,7 @@ export default function ShopPage({ searchParams }: ShopPageProps) {
                       onClick={() => setMinRating(rating)}
                       className={`flex w-full items-center gap-2 text-xs py-1 px-2 rounded-md transition cursor-pointer ${
                         minRating === rating
-                          ? "bg-orange-500 text-white font-semibold"
+                          ? "bg-[#0F2E5C] text-white font-semibold"
                           : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
                       }`}
                     >
@@ -199,7 +199,7 @@ export default function ShopPage({ searchParams }: ShopPageProps) {
                                   i < rating
                                     ? minRating === rating
                                       ? "fill-white text-white"
-                                      : "fill-orange-400 text-orange-400"
+                                      : "fill-[#2563EB] text-[#2563EB]"
                                     : "text-gray-200"
                                 }`}
                               />
@@ -263,7 +263,7 @@ export default function ShopPage({ searchParams }: ShopPageProps) {
                 </p>
                 <button
                   onClick={handleResetFilters}
-                  className="mt-4 inline-flex items-center justify-center rounded-xl bg-orange-500 px-6 py-2.5 text-xs font-semibold text-white hover:bg-orange-600 transition shadow-md shadow-orange-500/10 cursor-pointer"
+                  className="mt-4 inline-flex items-center justify-center rounded-xl bg-[#0F2E5C] px-6 py-2.5 text-xs font-semibold text-white hover:bg-[#0A2142] transition shadow-md shadow-[#0F2E5C]/10 cursor-pointer"
                 >
                   Clear All Filters
                 </button>
@@ -307,7 +307,7 @@ export default function ShopPage({ searchParams }: ShopPageProps) {
                       handleResetFilters();
                       setMobileFiltersOpen(false);
                     }}
-                    className="text-xs font-semibold text-orange-500"
+                    className="text-xs font-semibold text-[#0F2E5C]"
                   >
                     Reset All
                   </button>
@@ -332,7 +332,7 @@ export default function ShopPage({ searchParams }: ShopPageProps) {
                       onClick={() => setSelectedCategory("")}
                       className={`text-xs py-1.5 px-3 rounded-lg border transition cursor-pointer ${
                         selectedCategory === ""
-                          ? "border-orange-500 bg-orange-50 text-orange-500 font-bold"
+                          ? "border-[#0F2E5C] bg-[#EFF5FC] text-[#0F2E5C] font-bold"
                           : "border-gray-200 text-gray-600 bg-white"
                       }`}
                     >
@@ -344,7 +344,7 @@ export default function ShopPage({ searchParams }: ShopPageProps) {
                         onClick={() => setSelectedCategory(cat.toLowerCase())}
                         className={`text-xs py-1.5 px-3 rounded-lg border transition cursor-pointer ${
                           selectedCategory === cat.toLowerCase()
-                            ? "border-orange-500 bg-orange-50 text-orange-500 font-bold"
+                            ? "border-[#0F2E5C] bg-[#EFF5FC] text-[#0F2E5C] font-bold"
                             : "border-gray-200 text-gray-600 bg-white"
                         }`}
                       >
@@ -360,7 +360,7 @@ export default function ShopPage({ searchParams }: ShopPageProps) {
                     <h4 className="text-xs font-bold text-gray-900 uppercase tracking-wider">
                       Max Price
                     </h4>
-                    <span className="text-xs font-bold text-orange-500">${maxPrice}</span>
+                    <span className="text-xs font-bold text-[#0F2E5C]">${maxPrice}</span>
                   </div>
                   <input
                     type="range"
@@ -369,7 +369,7 @@ export default function ShopPage({ searchParams }: ShopPageProps) {
                     step="50"
                     value={maxPrice}
                     onChange={(e) => setMaxPrice(Number(e.target.value))}
-                    className="w-full h-1.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-orange-500"
+                    className="w-full h-1.5 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#0F2E5C]"
                   />
                   <div className="flex justify-between text-[10px] text-gray-400 mt-1 font-semibold">
                     <span>$0</span>
@@ -389,7 +389,7 @@ export default function ShopPage({ searchParams }: ShopPageProps) {
                         onClick={() => setMinRating(rating)}
                         className={`flex items-center justify-center gap-1.5 text-xs py-2 px-3 rounded-lg border transition cursor-pointer ${
                           minRating === rating
-                            ? "border-orange-500 bg-orange-50 text-orange-500 font-bold"
+                            ? "border-[#0F2E5C] bg-[#EFF5FC] text-[#0F2E5C] font-bold"
                             : "border-gray-200 text-gray-600 bg-white"
                         }`}
                       >
@@ -403,7 +403,7 @@ export default function ShopPage({ searchParams }: ShopPageProps) {
                                   key={i}
                                   className={`h-3 w-3 ${
                                     i < rating
-                                      ? "fill-orange-400 text-orange-400"
+                                      ? "fill-[#2563EB] text-[#2563EB]"
                                       : "text-gray-200"
                                   }`}
                                 />
@@ -421,7 +421,7 @@ export default function ShopPage({ searchParams }: ShopPageProps) {
               {/* View Results Action Button */}
               <button
                 onClick={() => setMobileFiltersOpen(false)}
-                className="mt-8 w-full py-3 bg-orange-500 text-white rounded-xl font-semibold hover:bg-orange-600 transition shadow-lg shadow-orange-500/10 cursor-pointer"
+                className="mt-8 w-full py-3 bg-[#0F2E5C] text-white rounded-xl font-semibold hover:bg-[#0A2142] transition shadow-lg shadow-[#0F2E5C]/10 cursor-pointer"
               >
                 Show {processedProducts.length} Results
               </button>

@@ -10,7 +10,7 @@ function Rating({rating,}: {rating: number;}) {
           size={12}
           className={`${
             star <= rating
-              ? "fill-orange-400 text-orange-400"
+              ? "fill-[#2563EB] text-[#2563EB]"
               : "fill-gray-200 text-gray-200"
           }`}
         />

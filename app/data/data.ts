@@ -550,7 +550,7 @@ const faqData: FAQItem[] = [
   {
     question: "Are all products covered by warranty?",
     answer:
-      "All electronics come with manufacturer warranty. GriVA also offers an extended warranty program for an additional 1–2 years of coverage.",
+      "All electronics come with manufacturer warranty. E-Commerce also offers an extended warranty program for an additional 1–2 years of coverage.",
   },
   {
     question: "How can I track my order?",

@@ -10,7 +10,7 @@ export default function Badge({ text, variant = "neutral", className = "" }: Bad
   const getStyles = () => {
     switch (variant) {
       case "sale":
-        return "bg-orange-500 text-white";
+        return "bg-[#0F2E5C] text-white";
       case "hot":
         return "bg-red-600 text-white animate-pulse";
       case "new":

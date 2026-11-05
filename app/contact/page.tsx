@@ -22,7 +22,7 @@ export default function ContactPage() {
   return (
     <div className="bg-gray-50/50 min-h-screen py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading title="Contact GriVA" subtitle="We're here to answer your questions and assist with orders" />
+        <SectionHeading title="Contact E-Commerce" subtitle="We're here to answer your questions and assist with orders" />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12">
           {/* Info cards (Left) */}
@@ -36,7 +36,7 @@ export default function ContactPage() {
                 <div className="space-y-4">
                   {/* Phone */}
                   <div className="flex gap-4 items-start">
-                    <div className="h-10 w-10 bg-orange-50 text-orange-500 rounded-lg flex items-center justify-center shrink-0">
+                    <div className="h-10 w-10 bg-[#EFF5FC] text-[#0F2E5C] rounded-lg flex items-center justify-center shrink-0">
                       <Phone className="h-5 w-5" />
                     </div>
                     <div>
@@ -48,19 +48,19 @@ export default function ContactPage() {
 
                   {/* Email */}
                   <div className="flex gap-4 items-start">
-                    <div className="h-10 w-10 bg-orange-50 text-orange-500 rounded-lg flex items-center justify-center shrink-0">
+                    <div className="h-10 w-10 bg-[#EFF5FC] text-[#0F2E5C] rounded-lg flex items-center justify-center shrink-0">
                       <Mail className="h-5 w-5" />
                     </div>
                     <div>
                       <h4 className="text-sm font-bold text-gray-800">Email Enquiries</h4>
-                      <p className="text-xs text-gray-500 mt-0.5">support@griva.com</p>
+                      <p className="text-xs text-gray-500 mt-0.5">support@e-commerce.com</p>
                       <p className="text-[10px] text-gray-400">Expect a response within 24 hours</p>
                     </div>
                   </div>
 
                   {/* Map Pin */}
                   <div className="flex gap-4 items-start">
-                    <div className="h-10 w-10 bg-orange-50 text-orange-500 rounded-lg flex items-center justify-center shrink-0">
+                    <div className="h-10 w-10 bg-[#EFF5FC] text-[#0F2E5C] rounded-lg flex items-center justify-center shrink-0">
                       <MapPin className="h-5 w-5" />
                     </div>
                     <div>
@@ -89,11 +89,11 @@ export default function ContactPage() {
                     </div>
                     <h4 className="font-bold text-gray-900">Message Sent Successfully!</h4>
                     <p className="text-xs text-gray-500 max-w-sm mx-auto">
-                      Thank you for contacting GriVA. Our support agents have received your enquiry and will follow up shortly.
+                      Thank you for contacting E-Commerce. Our support agents have received your enquiry and will follow up shortly.
                     </p>
                     <button
                       onClick={() => setSubmitted(false)}
-                      className="text-xs font-semibold text-orange-500 hover:underline cursor-pointer"
+                      className="text-xs font-semibold text-[#0F2E5C] hover:underline cursor-pointer"
                     >
                       Send another message
                     </button>
@@ -110,7 +110,7 @@ export default function ContactPage() {
                           required
                           value={form.name}
                           onChange={(e) => setForm({ ...form, name: e.target.value })}
-                          className="w-full rounded-lg border border-gray-200 p-3 text-xs outline-none focus:border-orange-500 bg-white text-black"
+                          className="w-full rounded-lg border border-gray-200 p-3 text-xs outline-none focus:border-[#0F2E5C] bg-white text-black"
                           placeholder="John Doe"
                         />
                       </div>
@@ -123,7 +123,7 @@ export default function ContactPage() {
                           required
                           value={form.email}
                           onChange={(e) => setForm({ ...form, email: e.target.value })}
-                          className="w-full rounded-lg border border-gray-200 p-3 text-xs outline-none focus:border-orange-500 bg-white text-black"
+                          className="w-full rounded-lg border border-gray-200 p-3 text-xs outline-none focus:border-[#0F2E5C] bg-white text-black"
                           placeholder="johndoe@example.com"
                         />
                       </div>
@@ -137,7 +137,7 @@ export default function ContactPage() {
                         type="text"
                         value={form.subject}
                         onChange={(e) => setForm({ ...form, subject: e.target.value })}
-                        className="w-full rounded-lg border border-gray-200 p-3 text-xs outline-none focus:border-orange-500 bg-white text-black"
+                        className="w-full rounded-lg border border-gray-200 p-3 text-xs outline-none focus:border-[#0F2E5C] bg-white text-black"
                         placeholder="Order Enquiry / Feedback"
                       />
                     </div>
@@ -151,14 +151,14 @@ export default function ContactPage() {
                         rows={5}
                         value={form.message}
                         onChange={(e) => setForm({ ...form, message: e.target.value })}
-                        className="w-full rounded-lg border border-gray-200 p-3 text-xs outline-none focus:border-orange-500 bg-white text-black"
+                        className="w-full rounded-lg border border-gray-200 p-3 text-xs outline-none focus:border-[#0F2E5C] bg-white text-black"
                         placeholder="Write your message here..."
                       />
                     </div>
 
                     <button
                       type="submit"
-                      className="w-full flex items-center justify-center gap-2 rounded-xl bg-orange-500 py-3.5 text-sm font-semibold text-white hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/10 cursor-pointer"
+                      className="w-full flex items-center justify-center gap-2 rounded-xl bg-[#0F2E5C] py-3.5 text-sm font-semibold text-white hover:bg-[#0A2142] transition-colors shadow-lg shadow-[#0F2E5C]/10 cursor-pointer"
                     >
                       <Send className="h-4 w-4" /> Send Message
                     </button>

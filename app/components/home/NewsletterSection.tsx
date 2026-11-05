@@ -2,7 +2,7 @@
 
 export default function NewsletterSection() {
   return (
-    <section className="bg-[#8990f1] max-w-7xl mx-auto py-10 rounded-lg mb-10">
+    <section className="bg-[#0F2E5C] max-w-7xl mx-auto py-10 rounded-lg mb-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
         <div className="flex flex-col items-center gap-3 text-center lg:flex-row lg:justify-between lg:text-left">
 
@@ -28,7 +28,7 @@ export default function NewsletterSection() {
             />
             <button
               type="submit"
-              className="bg-black px-7 py-4 text-xs font-black uppercase tracking-widest text-white transition duration-300 hover:bg-gray-800 whitespace-nowrap rounded-r-full"
+              className="bg-[#2563EB] px-7 py-4 text-xs font-black uppercase tracking-widest text-white transition duration-300 hover:bg-[#1D4ED8] whitespace-nowrap rounded-r-full cursor-pointer"
             >
               Subscribe
             </button>

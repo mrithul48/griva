@@ -30,7 +30,7 @@ function BannerCard({banner}: {banner: BannerItem}) {
 
         <Link
           href={banner.href}
-          className="mt-6 flex h-10 w-28 items-center justify-center bg-white text-sm font-medium text-black transition hover:bg-orange-500 hover:text-white"
+          className="mt-6 flex h-10 w-28 items-center justify-center bg-white text-sm font-medium text-black transition hover:bg-[#0F2E5C] hover:text-white"
         >
           {banner.buttonText}
         </Link>

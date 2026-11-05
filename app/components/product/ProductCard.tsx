@@ -46,13 +46,13 @@ export default function ProductCard({ product }: { product: Product }) {
 
   return (
     <motion.div
-      className="group relative bg-white rounded-xl p-4 border border-gray-100 shadow-sm hover:shadow-md  flex flex-col justify-between h-full hover:border-orange-500"
+      className="group relative bg-white rounded-xl p-4 border border-gray-100 shadow-sm hover:shadow-md  flex flex-col justify-between h-full hover:border-[#0F2E5C]"
     >
       <Link href={`/product/${product.id}`} className="block flex-1">
         {/* Badges */}
         <div className="absolute left-2.5 top-2.5 z-10 flex flex-col gap-1">
           {product.badge && (
-            <div className={`rounded px-2 py-0.5 text-[9px] font-extrabold text-white uppercase ${product.badgeColor || "bg-orange-500"}`}>
+            <div className={`rounded px-2 py-0.5 text-[9px] font-extrabold text-white uppercase ${product.badgeColor || "bg-[#0F2E5C]"}`}>
               {product.badge}
             </div>
           )}
@@ -95,7 +95,7 @@ export default function ProductCard({ product }: { product: Product }) {
         </p>
 
         {/* Title */}
-        <h3 className="mt-1 line-clamp-2 text-sm font-semibold leading-[1.4] text-gray-900 transition-colors group-hover:text-orange-500">
+        <h3 className="mt-1 line-clamp-2 text-sm font-semibold leading-[1.4] text-gray-900 transition-colors group-hover:text-[#0F2E5C]">
           {product.title}
         </h3>
 
@@ -106,7 +106,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
         {/* Price & Old Price */}
         <div className="mt-2.5 flex items-center gap-2">
-          <span className="text-lg font-bold text-orange-500">{product.price}</span>
+          <span className="text-lg font-bold text-[#0F2E5C]">{product.price}</span>
           {product.oldPrice && (
             <span className="text-xs text-gray-400 line-through">
               {product.oldPrice}
@@ -118,7 +118,7 @@ export default function ProductCard({ product }: { product: Product }) {
       {/* Add To Cart */}
       <button
         onClick={handleAddToCart}
-        className="mt-4 cursor-pointer flex h-10 w-full items-center justify-center rounded-lg border border-orange-500 bg-white text-[11px] font-bold tracking-wide text-gray-900 transition hover:bg-orange-500 hover:text-white"
+        className="mt-4 cursor-pointer flex h-10 w-full items-center justify-center rounded-lg border border-[#0F2E5C] bg-[#0F2E5C] text-[11px] font-bold tracking-wide text-white transition hover:bg-[#0A2142]"
       >
         {product.buttonText || "ADD TO CART"}
       </button>

@@ -33,7 +33,7 @@ export function WishlistProvider({ children }: { children: ReactNode }) {
   // Load from localStorage after hydration
   useEffect(() => {
     try {
-      const stored = localStorage.getItem("griva-wishlist");
+      const stored = localStorage.getItem("ecommerce-wishlist");
       if (stored) {
         setItems(JSON.parse(stored));
       }
@@ -46,7 +46,7 @@ export function WishlistProvider({ children }: { children: ReactNode }) {
   // Persist to localStorage
   useEffect(() => {
     if (!hydrated) return;
-    localStorage.setItem("griva-wishlist", JSON.stringify(items));
+    localStorage.setItem("ecommerce-wishlist", JSON.stringify(items));
   }, [items, hydrated]);
 
   const isInWishlist = (productId: number) => {

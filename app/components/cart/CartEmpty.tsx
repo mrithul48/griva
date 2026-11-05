@@ -10,7 +10,7 @@ interface CartEmptyProps {
 export default function CartEmpty({ onClose }: CartEmptyProps) {
   return (
     <div className="flex flex-col items-center justify-center py-16 px-4 text-center">
-      <div className="flex h-16 w-16 items-center justify-center rounded-full bg-orange-50 text-orange-500 mb-6">
+      <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#EFF5FC] text-[#0F2E5C] mb-6">
         <ShoppingCart className="h-8 w-8" />
       </div>
       <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -22,7 +22,7 @@ export default function CartEmpty({ onClose }: CartEmptyProps) {
       <Link
         href="/shop"
         onClick={onClose}
-        className="inline-flex items-center justify-center rounded-xl bg-orange-500 px-6 py-3 text-sm font-semibold text-white hover:bg-orange-600 transition-colors shadow-md shadow-orange-500/10"
+        className="inline-flex items-center justify-center rounded-xl bg-[#0F2E5C] px-6 py-3 text-sm font-semibold text-white hover:bg-[#0A2142] transition-colors shadow-md shadow-[#0F2E5C]/10"
       >
         Start Shopping
       </Link>

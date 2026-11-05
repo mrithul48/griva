@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GriVA — Premium Electronics Store",
-  description: "Explore flagship smartphones, laptops, smartwatches, audiophile headphones, and gaming gear at GriVA.",
+  title: "E-Commerce — Premium Electronics Store",
+  description: "Explore flagship smartphones, laptops, smartwatches, audiophile headphones, and gaming gear at E-Commerce.",
 };
 
 export default function RootLayout({

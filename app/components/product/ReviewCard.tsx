@@ -13,7 +13,7 @@ export default function ReviewCard({ review }: ReviewCardProps) {
       <div className="flex items-start justify-between gap-4">
         {/* Author info */}
         <div className="flex items-center gap-3">
-          <div className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-orange-50 text-sm font-bold text-orange-500">
+          <div className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#EFF5FC] text-sm font-bold text-[#0F2E5C]">
             {review.author.charAt(0)}
           </div>
           <div>
@@ -37,7 +37,7 @@ export default function ReviewCard({ review }: ReviewCardProps) {
               key={idx}
               className={`h-4. w-4. ${
                 idx < review.rating
-                  ? "fill-orange-400 text-orange-400"
+                  ? "fill-[#2563EB] text-[#2563EB]"
                   : "text-gray-200"
               }`}
             />

@@ -56,7 +56,7 @@ export default function CartDrawer() {
             {/* Header */}
             <div className="flex items-center justify-between border-b px-6 py-5">
               <div className="flex items-center gap-2">
-                <ShoppingBag className="h-5 w-5 text-orange-500" />
+                <ShoppingBag className="h-5 w-5 text-[#0F2E5C]" />
                 <h2 className="text-lg font-bold text-gray-900">
                   Shopping Cart ({state.totalItems})
                 </h2>
@@ -89,7 +89,7 @@ export default function CartDrawer() {
               <div className="border-t bg-gray-50 px-6 py-6 space-y-4">
                 <div className="flex justify-between text-base font-semibold text-gray-900">
                   <span>Subtotal</span>
-                  <span className="text-orange-500">${state.totalPrice.toFixed(2)}</span>
+                  <span className="text-[#0F2E5C]">${state.totalPrice.toFixed(2)}</span>
                 </div>
                 <p className="text-xs text-gray-400">
                   Shipping and taxes calculated at checkout.
@@ -105,7 +105,7 @@ export default function CartDrawer() {
                   </Link>
                   <button
                     onClick={() => alert("Checkout demo: This is a placeholder checkout button.")}
-                    className="flex w-full items-center justify-center rounded-xl bg-orange-500 px-6 py-3 text-sm font-semibold text-white hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/10 cursor-pointer"
+                    className="flex w-full items-center justify-center rounded-xl bg-[#0F2E5C] px-6 py-3 text-sm font-semibold text-white hover:bg-[#0A2142] transition-colors shadow-lg shadow-[#0F2E5C]/10 cursor-pointer"
                   >
                     Proceed to Checkout
                   </button>

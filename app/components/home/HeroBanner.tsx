@@ -66,8 +66,8 @@ export default function HeroBanner() {
           style={{ backgroundColor: currentSlide.bg }}
         >
           {/* Background Glow */}
-          <div className="absolute -left-20 top-0 h-72 w-72 rounded-full bg-orange-500/10 blur-3xl" />
-          <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-indigo-500/10 blur-3xl" />
+          <div className="absolute -left-20 top-0 h-72 w-72 rounded-full bg-[#2563EB]/15 blur-3xl" />
+          <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-[#0F2E5C]/15 blur-3xl" />
 
           {/* Fixed height flex row */}
           <div className="relative z-10 flex h-[480px] flex-col lg:flex-row">
@@ -84,7 +84,7 @@ export default function HeroBanner() {
               }`}
             >
               {/* Badge */}
-              <div className="mb-5 inline-flex w-fit rounded-md bg-orange-500 px-4 py-1.5">
+              <div className="mb-5 inline-flex w-fit rounded-md bg-[#0F2E5C] px-4 py-1.5">
                 <span className="text-[10px] font-bold uppercase tracking-[2px] text-white">
                   {currentSlide.badge}
                 </span>
@@ -118,7 +118,7 @@ export default function HeroBanner() {
                 <span className="text-lg font-medium text-gray-300">From</span>
                 <span
                   key={`price-${animKey}`}
-                  className="price-shake text-4xl font-black text-orange-400"
+                  className="price-shake text-4xl font-black text-white"
                 >
                   {currentSlide.price}
                 </span>
@@ -129,13 +129,13 @@ export default function HeroBanner() {
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link
                   href="/shop"
-                  className="flex h-12 items-center justify-center gap-2 rounded-xl bg-orange-500 px-7 text-[12px] font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-orange-600"
+                  className="flex h-12 items-center justify-center gap-2 rounded-xl bg-[#0F2E5C] px-7 text-[12px] font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-[#0A2142] border border-[#2563EB]/30 shadow-md"
                 >
                   Shop Now
                   <ArrowRight size={16} />
                 </Link>
                 <Link
-                  href="/products"
+                  href="/shop"
                   className="flex h-12 items-center justify-center rounded-xl border border-white/15 px-7 text-[12px] font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-white/10"
                 >
                   Explore More
@@ -155,7 +155,7 @@ export default function HeroBanner() {
               }`}
             >
               {/* Glow */}
-              <div className="absolute h-72 w-72 rounded-full bg-orange-500/20 blur-3xl" />
+              <div className="absolute h-72 w-72 rounded-full bg-[#2563EB]/20 blur-3xl" />
 
               <div className="relative h-[380px] w-[380px] flex-shrink-0">
                 <Image
@@ -173,7 +173,7 @@ export default function HeroBanner() {
           {/* Extra Info — FIXED, never animates, centered */}
           <div className="relative z-10 grid grid-cols-3 place-items-center gap-5 border-t border-white/10 px-6 pb-8 pt-6 sm:px-10 lg:px-20 pb-15">
             <div className="flex items-center gap-3">
-              <Truck className="text-orange-400" size={20} />
+              <Truck className="text-[#2563EB]" size={20} />
               <div>
                 <h4 className="text-sm font-bold text-white">Free Shipping</h4>
                 <p className="text-xs text-gray-400">On all orders</p>
@@ -181,7 +181,7 @@ export default function HeroBanner() {
             </div>
 
             <div className="flex items-center gap-3">
-              <ShieldCheck className="text-orange-400" size={20} />
+              <ShieldCheck className="text-[#2563EB]" size={20} />
               <div>
                 <h4 className="text-sm font-bold text-white">Secure Payment</h4>
                 <p className="text-xs text-gray-400">100% protected</p>
@@ -189,7 +189,7 @@ export default function HeroBanner() {
             </div>
 
             <div className="flex items-center gap-3">
-              <Star className="text-orange-400" size={20} />
+              <Star className="text-[#2563EB]" size={20} />
               <div>
                 <h4 className="text-sm font-bold text-white">Top Rating</h4>
                 <p className="text-xs text-gray-400">Trusted quality</p>
@@ -205,7 +205,7 @@ export default function HeroBanner() {
                 onClick={() => goTo(i)}
                 className={`rounded-full transition-all duration-300 ${
                   i === current
-                    ? "h-2.5 w-7 bg-orange-500"
+                    ? "h-2.5 w-7 bg-[#2563EB]"
                     : "h-2.5 w-2.5 bg-white/50 hover:bg-white"
                 }`}
               />

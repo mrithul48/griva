@@ -41,12 +41,12 @@ export default function TrendingProductCard({
     >
       <Link
         href={productLink}
-        className="group relative flex rounded-xl p-4 shadow-sm hover:shadow transition border border-gray-100 hover:border-orange-200"
+        className="group relative flex rounded-xl p-4 shadow-sm hover:shadow transition border border-gray-100 hover:border-[#0F2E5C]"
       >
         {/* Badges */}
         <div className="absolute left-3 top-3 z-10 flex flex-col gap-1">
           {product.badge && (
-            <span className="rounded bg-orange-500 px-2 py-0.5 text-[9px] font-extrabold text-white uppercase">
+            <span className="rounded bg-[#0F2E5C] px-2 py-0.5 text-[9px] font-extrabold text-white uppercase">
               {product.badge}
             </span>
           )}
@@ -90,7 +90,7 @@ export default function TrendingProductCard({
           </p>
 
           {/* Title */}
-          <h3 className="mt-1 line-clamp-2 text-sm font-semibold leading-[1.4] text-gray-900 transition-colors group-hover:text-orange-500">
+          <h3 className="mt-1 line-clamp-2 text-sm font-semibold leading-[1.4] text-gray-900 transition-colors group-hover:text-[#0F2E5C]">
             {product.title}
           </h3>
 
@@ -101,7 +101,7 @@ export default function TrendingProductCard({
 
           {/* Price */}
           <div className="mt-2.5 flex items-center gap-2">
-            <span className="text-base font-bold text-orange-500">
+            <span className="text-base font-bold text-[#0F2E5C]">
               {product.price}
             </span>
             {product.oldPrice && (

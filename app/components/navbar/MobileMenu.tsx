@@ -50,7 +50,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       >
         <div className="flex items-center justify-between border-b pb-4">
           <h2 className="text-xl font-bold text-gray-900">
-            GR<span className="text-orange-500">i</span>VA Menu
+            E-<span className="text-[#2563EB]">Commerce</span> Menu
           </h2>
           <button
             onClick={onClose}
@@ -67,7 +67,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               key={link.label}
               href={link.href}
               onClick={onClose}
-              className="block rounded-lg px-4 py-2.5 text-sm font-semibold text-gray-900 hover:bg-orange-50 hover:text-orange-500 transition-colors"
+              className="block rounded-lg px-4 py-2.5 text-sm font-semibold text-gray-900 hover:bg-[#EFF5FC] hover:text-[#0F2E5C] transition-colors"
             >
               {link.label}
             </Link>
@@ -77,12 +77,12 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           <div className="space-y-1">
             <button
               onClick={() => setCategoriesOpen(!categoriesOpen)}
-              className="flex w-full items-center justify-between rounded-lg px-4 py-2.5 text-sm font-semibold text-gray-900 hover:bg-orange-50 hover:text-orange-500 transition-colors text-left"
+              className="flex w-full items-center justify-between rounded-lg px-4 py-2.5 text-sm font-semibold text-gray-900 hover:bg-[#EFF5FC] hover:text-[#0F2E5C] transition-colors text-left"
             >
               <span>Categories</span>
               <ChevronDown
                 className={`h-4 w-4 transition-transform duration-200 ${
-                  categoriesOpen ? "rotate-180 text-orange-500" : "text-gray-400"
+                  categoriesOpen ? "rotate-180 text-[#0F2E5C]" : "text-gray-400"
                 }`}
               />
             </button>
@@ -93,7 +93,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                     key={cat}
                     href={`/shop?category=${cat.toLowerCase()}`}
                     onClick={onClose}
-                    className="block rounded-md px-4 py-2 text-xs font-medium text-gray-600 hover:bg-orange-50 hover:text-orange-500 transition-colors"
+                    className="block rounded-md px-4 py-2 text-xs font-medium text-gray-600 hover:bg-[#EFF5FC] hover:text-[#0F2E5C] transition-colors"
                   >
                     {cat}
                   </Link>
@@ -111,7 +111,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               onClick={onClose}
               className="flex items-center justify-center gap-2 rounded-xl border border-gray-200 px-4 py-2.5 text-sm font-semibold text-gray-800 hover:bg-gray-50 transition"
             >
-              <Heart className="h-4 w-4 text-orange-500" />
+              <Heart className="h-4 w-4 text-[#0F2E5C]" />
               Wishlist ({wishlistItems.length})
             </Link>
             <button
@@ -119,7 +119,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 onClose();
                 openDrawer();
               }}
-              className="flex items-center justify-center gap-2 rounded-xl bg-orange-500 px-4 py-2.5 text-sm font-semibold text-white hover:bg-orange-600 transition"
+              className="flex items-center justify-center gap-2 rounded-xl bg-[#0F2E5C] px-4 py-2.5 text-sm font-semibold text-white hover:bg-[#0A2142] transition"
             >
               <ShoppingCart className="h-4 w-4" />
               Cart ({cartState.totalItems})
@@ -128,11 +128,11 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
           <div className="space-y-2.5 text-xs text-gray-500 pl-2">
             <div className="flex items-center gap-2">
-              <Phone className="h-4 w-4 text-orange-500" />
+              <Phone className="h-4 w-4 text-[#0F2E5C]" />
               <span>+08 9229 8228</span>
             </div>
             <div className="flex items-center gap-2">
-              <Globe className="h-4 w-4 text-orange-500" />
+              <Globe className="h-4 w-4 text-[#0F2E5C]" />
               <span>English / USD</span>
             </div>
           </div>

@@ -34,7 +34,7 @@ export default function ReturnsPage() {
             <section className="space-y-3">
               <h3 className="font-bold text-gray-900 text-base">How to Initiate a Return</h3>
               <p>
-                To start a return, please contact our support team at <span className="font-bold text-orange-500">support@griva.com</span> with your order number. Once approved, we will send you a pre-paid shipping label and instructions on how and where to send your package.
+                To start a return, please contact our support team at <span className="font-bold text-[#0F2E5C]">support@e-commerce.com</span> with your order number. Once approved, we will send you a pre-paid shipping label and instructions on how and where to send your package.
               </p>
             </section>
 

@@ -67,7 +67,7 @@ export default function SearchDropdown({ onClose }: SearchDropdownProps) {
                     addRecentSearch(searchQuery);
                     onClose();
                   }}
-                  className="flex items-center gap-3 rounded-md p-2 hover:bg-orange-50 transition-colors"
+                  className="flex items-center gap-3 rounded-md p-2 hover:bg-[#EFF5FC] transition-colors"
                 >
                   <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded border bg-gray-50">
                     <Image
@@ -85,7 +85,7 @@ export default function SearchDropdown({ onClose }: SearchDropdownProps) {
                       {product.category}
                     </p>
                   </div>
-                  <span className="text-xs font-bold text-orange-500">
+                  <span className="text-xs font-bold text-[#0F2E5C]">
                     {product.price}
                   </span>
                 </Link>
@@ -118,7 +118,7 @@ export default function SearchDropdown({ onClose }: SearchDropdownProps) {
               <button
                 key={query}
                 onClick={() => handleSearchItemClick(query)}
-                className="flex items-center gap-1 rounded-full bg-gray-50 border border-gray-100 px-3 py-1 text-xs text-gray-600 hover:bg-orange-50 hover:border-orange-200 transition-all"
+                className="flex items-center gap-1 rounded-full bg-gray-50 border border-gray-100 px-3 py-1 text-xs text-gray-600 hover:bg-[#EFF5FC] hover:border-[#0F2E5C] transition-all"
               >
                 <span>{query}</span>
               </button>

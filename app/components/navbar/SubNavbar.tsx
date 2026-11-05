@@ -75,12 +75,12 @@ export default function SubNavbar() {
             onMouseEnter={() => setActiveDropdown("shop-categories")}
             onMouseLeave={() => setActiveDropdown(null)}
           >
-            <button className="flex h-14 items-center gap-3 border-r border-gray-200 pr-10 hover:text-orange-500 transition-colors">
-              <Menu size={20} className="text-black" />
-              <span className="text-sm font-semibold text-black hover:text-orange-500 transition-colors">
+            <button className="flex h-14 items-center gap-3 border-r border-[#E2E8F0] pr-10 hover:text-[#0F2E5C] transition-colors">
+              <Menu size={20} className="text-[#0F2E5C]" />
+              <span className="text-sm font-semibold text-[#171E2B] hover:text-[#0F2E5C] transition-colors">
                 Shop Categories
               </span>
-              <ChevronDown size={16} className="text-gray-500" />
+              <ChevronDown size={16} className="text-[#64748B]" />
             </button>
 
             <ShopeCategoryDropDown
@@ -102,8 +102,8 @@ export default function SubNavbar() {
                   href={link.href}
                   className={`flex items-center gap-1 text-sm font-semibold transition-colors duration-200 ${
                     link.active
-                      ? "text-orange-500 font-bold"
-                      : "text-black hover:text-orange-500"
+                      ? "text-[#0F2E5C] font-bold"
+                      : "text-[#171E2B] hover:text-[#0F2E5C]"
                   }`}
                 >
                   {link.label}
@@ -130,11 +130,11 @@ export default function SubNavbar() {
           {/* Wishlist */}
           <Link
             href="/wishlist"
-            className="relative flex items-center border-r border-gray-200 pr-8 group cursor-pointer"
+            className="relative flex items-center border-r border-[#E2E8F0] pr-8 group cursor-pointer"
           >
-            <Heart size={22} className="stroke-[1.8] text-black group-hover:text-orange-500 transition-colors" />
+            <Heart size={22} className="stroke-[1.8] text-[#171E2B] group-hover:text-[#0F2E5C] transition-colors" />
             {wishlistItems.length > 0 && (
-              <span className="absolute -right-1 top-0 flex h-5 w-5 items-center justify-center rounded-full bg-orange-500 text-[10px] font-bold text-white px-1 animate-pulse">
+              <span className="absolute -right-1 top-0 flex h-5 w-5 items-center justify-center rounded-full bg-[#0F2E5C] text-[10px] font-bold text-white px-1 animate-pulse">
                 {wishlistItems.length}
               </span>
             )}
@@ -142,10 +142,10 @@ export default function SubNavbar() {
 
           {/* Deal */}
           <Link href="/shop" className="flex items-center gap-2 group">
-            <span className="text-sm font-semibold text-black group-hover:text-orange-500 transition-colors">
+            <span className="text-sm font-semibold text-[#171E2B] group-hover:text-[#0F2E5C] transition-colors">
               Today's Deal
             </span>
-            <span className="rounded bg-orange-500 px-1.5 py-[2px] text-[10px] font-bold uppercase text-white animate-bounce">
+            <span className="rounded bg-[#0F2E5C] px-1.5 py-[2px] text-[10px] font-bold uppercase text-white animate-bounce">
               Hot
             </span>
           </Link>

@@ -83,7 +83,7 @@ export default function CartItem({ item }: CartItemProps) {
           <div className="flex items-center rounded-lg border border-gray-200">
             <button
               onClick={handleDecrement}
-              className="flex h-7 w-7 items-center justify-center text-gray-500 hover:bg-orange-50 hover:text-orange-500 transition-colors rounded-l-lg"
+              className="flex h-7 w-7 items-center justify-center text-gray-500 hover:bg-[#EFF5FC] hover:text-[#0F2E5C] transition-colors rounded-l-lg"
             >
               <Minus className="h-3 w-3" />
             </button>
@@ -92,13 +92,13 @@ export default function CartItem({ item }: CartItemProps) {
             </span>
             <button
               onClick={handleIncrement}
-              className="flex h-7 w-7 items-center justify-center text-gray-500 hover:bg-orange-50 hover:text-orange-500 transition-colors rounded-r-lg"
+              className="flex h-7 w-7 items-center justify-center text-gray-500 hover:bg-[#EFF5FC] hover:text-[#0F2E5C] transition-colors rounded-r-lg"
             >
               <Plus className="h-3 w-3" />
             </button>
           </div>
 
-          <span className="text-sm font-bold text-orange-500">
+          <span className="text-sm font-bold text-[#0F2E5C]">
             ${(item.priceNumber * item.quantity).toFixed(2)}
           </span>
         </div>

@@ -32,7 +32,7 @@ export default function ShopeCategoryDropDown({
               <Link
                 key={item.label}
                 href={item.href}
-                className="block px-5 py-2.5 text-sm font-medium text-black transition hover:bg-orange-50 hover:text-orange-500"
+                className="block px-5 py-2.5 text-sm font-medium text-black transition hover:bg-[#EFF5FC] hover:text-[#0F2E5C]"
               >
                 {item.label}
               </Link>

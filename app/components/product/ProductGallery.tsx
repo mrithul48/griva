@@ -66,8 +66,8 @@ export default function ProductGallery({ images, title }: ProductGalleryProps) {
               onClick={() => setActiveIndex(idx)}
               className={`relative aspect-square w-20 shrink-0 overflow-hidden rounded-lg border bg-white p-1 transition-all cursor-pointer ${
                 activeIndex === idx
-                  ? "border-orange-500 ring-2 ring-orange-200"
-                  : "border-gray-100 hover:border-orange-200"
+                  ? "border-[#0F2E5C] ring-2 ring-[#EFF5FC]"
+                  : "border-gray-100 hover:border-[#0F2E5C]"
               }`}
             >
               <Image
